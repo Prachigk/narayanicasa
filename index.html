@@ -1818,8 +1818,11 @@ window.onload = function(){
   if(tabJewellery) setCat('jewellery', tabJewellery);
   initGrowAnimation();
   scrollToHashTarget();
-  // QR code: auto-open Grow With Us full guide if #grow in URL
-  if(window.location.hash==='#grow'){ showGrowFull(); }
+  // QR code: auto-open Grow With Us full guide
+  var _h=window.location.hash, _s=window.location.search, _p=window.location.pathname;
+  if(_h==="#grow" || _s.indexOf("grow")!==-1 || _p.indexOf("grow")!==-1){
+    setTimeout(function(){ showGrowFull(); }, 600);
+  }
 };
 
 function scrollToHashTarget(){
