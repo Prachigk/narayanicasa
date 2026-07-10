@@ -536,6 +536,7 @@ footer{background:var(--cream2);padding:52px 48px 24px;border-top:1px solid var(
  <div class="pi"><div class="pii"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><div class="pit">Quality Assured</div><div class="pid">Each piece quality checked</div></div>
 
 </div>
+
 <footer style="background:var(--cream2);border-top:1px solid var(--border);">
  <div style="display:flex;justify-content:space-between;align-items:flex-start;padding:40px 48px;border-bottom:1px solid var(--border);flex-wrap:wrap;gap:32px;">
 
@@ -685,6 +686,7 @@ footer{background:var(--cream2);padding:52px 48px 24px;border-top:1px solid var(
   </div>
  </div>
 </div>
+<!-- TEASER MODAL (FAB button visitors) -->
 <div class="about-bg" id="growTeaserBg" onclick="if(event.target===this)closeGrowTeaser()">
  <div class="about-modal" style="max-width:380px;padding:40px 32px;text-align:center;">
   <button class="about-close" onclick="closeGrowTeaser()">&#10005;</button>
@@ -709,6 +711,89 @@ footer{background:var(--cream2);padding:52px 48px 24px;border-top:1px solid var(
   <div style="font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--plum);font-weight:500;margin-bottom:10px;">Shop to find out what I am</div>
   <p style="font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:24px;">Place an order &mdash; the rest is a surprise.</p>
   <button onclick="closeGrowTeaser();showCat('jewellery');document.getElementById('products').scrollIntoView({behavior:'smooth'});" class="btn-p" style="width:100%;border:none;">Shop Now</button>
+ </div>
+</div>
+
+<!-- GROW WITH US FULL MODAL (QR code visitors only) -->
+<div class="about-bg" id="growFullBg" onclick="if(event.target===this)closeGrowFull()">
+ <div class="about-modal" style="max-width:560px;max-height:90vh;overflow-y:auto;padding:36px 32px;">
+  <button class="about-close" onclick="closeGrowFull()">&#10005;</button>
+  <div style="text-align:center;margin-bottom:28px;">
+   <svg width="60" height="60" viewBox="0 0 100 100" style="margin-bottom:14px;animation:growSway 4s ease-in-out infinite;">
+    <ellipse cx="50" cy="22" rx="6.5" ry="13" fill="#C9A84C" transform="rotate(0 50 50)"/>
+    <ellipse cx="50" cy="22" rx="6.5" ry="13" fill="#C9A84C" transform="rotate(30 50 50)"/>
+    <ellipse cx="50" cy="22" rx="6.5" ry="13" fill="#C9A84C" transform="rotate(60 50 50)"/>
+    <ellipse cx="50" cy="22" rx="6.5" ry="13" fill="#C9A84C" transform="rotate(90 50 50)"/>
+    <ellipse cx="50" cy="22" rx="6.5" ry="13" fill="#C9A84C" transform="rotate(120 50 50)"/>
+    <ellipse cx="50" cy="22" rx="6.5" ry="13" fill="#C9A84C" transform="rotate(150 50 50)"/>
+    <ellipse cx="50" cy="22" rx="6.5" ry="13" fill="#C9A84C" transform="rotate(180 50 50)"/>
+    <ellipse cx="50" cy="22" rx="6.5" ry="13" fill="#C9A84C" transform="rotate(210 50 50)"/>
+    <ellipse cx="50" cy="22" rx="6.5" ry="13" fill="#C9A84C" transform="rotate(240 50 50)"/>
+    <ellipse cx="50" cy="22" rx="6.5" ry="13" fill="#C9A84C" transform="rotate(270 50 50)"/>
+    <ellipse cx="50" cy="22" rx="6.5" ry="13" fill="#C9A84C" transform="rotate(300 50 50)"/>
+    <ellipse cx="50" cy="22" rx="6.5" ry="13" fill="#C9A84C" transform="rotate(330 50 50)"/>
+    <circle cx="50" cy="50" r="17" fill="#E8B84B"/>
+    <circle cx="44" cy="48" r="2.3" fill="#5C1A52"/>
+    <circle cx="56" cy="48" r="2.3" fill="#5C1A52"/>
+    <path d="M43 56 Q50 62 57 56" stroke="#5C1A52" stroke-width="2" fill="none" stroke-linecap="round"/>
+   </svg>
+   <div style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold2);margin-bottom:8px;">&#127807; A Little Gift From Us</div>
+   <h2 style="font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--plum);font-weight:500;line-height:1.3;margin-bottom:10px;">Order a Combo.<br><em style="color:var(--sage);">Grow Something Beautiful.</em></h2>
+   <p style="font-size:13px;color:var(--muted);line-height:1.75;">Your combo order came with a surprise seed gift 🌱<br>Here is how to make it bloom at home.</p>
+   <p style="font-family:'Cormorant Garamond',serif;font-size:15px;font-style:italic;color:var(--sage);margin-top:10px;">"From our home to yours — with love 🌸"</p>
+  </div>
+
+  <!-- Steps -->
+  <div style="border-left:2px solid var(--border);padding-left:20px;margin-left:10px;">
+
+   <div style="margin-bottom:22px;position:relative;">
+    <div style="position:absolute;left:-29px;top:2px;width:18px;height:18px;background:var(--gold2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:#fff;font-weight:700;">1</div>
+    <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:3px;">Step 1</div>
+    <div style="font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--plum);font-weight:600;margin-bottom:4px;">📦 You Already Did This!</div>
+    <div style="font-size:12.5px;color:var(--text);line-height:1.7;">Your combo order from Narayani Casa came with a surprise seed gift tucked inside the package. Open it and see what's waiting to bloom!</div>
+   </div>
+
+   <div style="margin-bottom:22px;position:relative;">
+    <div style="position:absolute;left:-29px;top:2px;width:18px;height:18px;background:var(--gold2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:#fff;font-weight:700;">2</div>
+    <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:3px;">Step 2</div>
+    <div style="font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--plum);font-weight:600;margin-bottom:4px;">🪴 Prepare a Small Pot</div>
+    <div style="font-size:12.5px;color:var(--text);line-height:1.7;">Take a small pot or cup and fill it with good quality potting soil. Make sure it has a drainage hole so the roots can breathe.</div>
+   </div>
+
+   <div style="margin-bottom:22px;position:relative;">
+    <div style="position:absolute;left:-29px;top:2px;width:18px;height:18px;background:var(--gold2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:#fff;font-weight:700;">3</div>
+    <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:3px;">Step 3</div>
+    <div style="font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--plum);font-weight:600;margin-bottom:4px;">🌱 Plant the Seed</div>
+    <div style="font-size:12.5px;color:var(--text);line-height:1.7;">Make a small hole about 1 cm deep in the centre of the soil. Drop the seed in gently and cover it lightly. Pat the soil softly — no pressing hard!</div>
+   </div>
+
+   <div style="margin-bottom:22px;position:relative;">
+    <div style="position:absolute;left:-29px;top:2px;width:18px;height:18px;background:var(--gold2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:#fff;font-weight:700;">4</div>
+    <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:3px;">Step 4</div>
+    <div style="font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--plum);font-weight:600;margin-bottom:4px;">☀️ Water &amp; Give Sunlight</div>
+    <div style="font-size:12.5px;color:var(--text);line-height:1.7;">Water gently — just enough to keep the soil moist, not wet. Place the pot in a spot with good indirect sunlight. Water a little every day.</div>
+   </div>
+
+   <div style="margin-bottom:8px;position:relative;">
+    <div style="position:absolute;left:-29px;top:2px;width:18px;height:18px;background:var(--sun);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:#fff;font-weight:700;">5</div>
+    <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold2);font-weight:600;margin-bottom:3px;">Step 5 — Bloom!</div>
+    <div style="font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--plum);font-weight:600;margin-bottom:4px;">🌻 Watch It Grow with Love</div>
+    <div style="font-size:12.5px;color:var(--text);line-height:1.7;">In a few days you will see tiny green shoots! Keep watering with love and patience. Just like beauty — good things take a little time to bloom. 🌸</div>
+   </div>
+
+  </div>
+
+  <!-- Share CTA -->
+  <div style="margin-top:28px;background:var(--cream2);border:1px solid var(--border);border-radius:4px;padding:20px 18px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;">
+   <div>
+    <div style="font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--plum);font-weight:600;margin-bottom:4px;">Share your bloom with us! 🌻</div>
+    <div style="font-size:12px;color:var(--muted);line-height:1.6;">Tag us on Instagram when your plant blooms. We would love to see it!</div>
+   </div>
+   <a href="https://www.instagram.com/narayani.casa" target="_blank" class="grow-share-btn" style="flex-shrink:0;">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+    @narayani.casa
+   </a>
+  </div>
  </div>
 </div>
 <div class="search-overlay" id="searchOverlay" onclick="if(event.target===this)closeSearch()">
@@ -781,6 +866,8 @@ function showAbout(){ var o=document.getElementById('aboutBg'); if(o) o.classLis
 function closeAbout(){ var o=document.getElementById('aboutBg'); if(o) o.classList.remove('open'); }
 function showGrowTeaser(){ var o=document.getElementById('growTeaserBg'); if(o) o.classList.add('open'); }
 function closeGrowTeaser(){ var o=document.getElementById('growTeaserBg'); if(o) o.classList.remove('open'); }
+function showGrowFull(){ var o=document.getElementById('growFullBg'); if(o) o.classList.add('open'); }
+function closeGrowFull(){ var o=document.getElementById('growFullBg'); if(o) o.classList.remove('open'); }
 function showPrivacy(){ var o=document.getElementById('privacyBg'); if(o) o.classList.add('open'); }
 function closePrivacy(){ var o=document.getElementById('privacyBg'); if(o) o.classList.remove('open'); }
 function showTerms(){ var o=document.getElementById('termsBg'); if(o) o.classList.add('open'); }
@@ -1731,6 +1818,8 @@ window.onload = function(){
   if(tabJewellery) setCat('jewellery', tabJewellery);
   initGrowAnimation();
   scrollToHashTarget();
+  // QR code: auto-open Grow With Us full guide if #grow in URL
+  if(window.location.hash==='#grow'){ showGrowFull(); }
 };
 
 function scrollToHashTarget(){
